@@ -1,0 +1,11 @@
+# Файл для автодеплоя на Render.com
+services:
+  - type: web
+    name: yoll-gamestore
+    env: node
+    buildCommand: echo "no build needed"
+    startCommand: node server.js
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
